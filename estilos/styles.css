@@ -114,7 +114,6 @@ nav a.active::after {
   color: var(--dark-color);
   position: relative;
 }
-
 .section-title::after {
   content: '';
   display: block;
@@ -124,7 +123,6 @@ nav a.active::after {
   margin: 1rem auto;
   border-radius: 2px;
 }
- 
 /* Secciones generales */
 section {
   padding: 5rem 0;
