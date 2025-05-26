@@ -120,10 +120,6 @@
   transition: transform 0.6s;
 }
 
-/* Efecto al pasar el cursor */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
 
 /* Caras de la tarjeta */
 .flip-card-front,
