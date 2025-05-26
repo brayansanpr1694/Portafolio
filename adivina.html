@@ -1,0 +1,72 @@
+<!-- rubik.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minijuego: Cubo Rubik</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <link rel="stylesheet" href="estilos/cubo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección del Cubo -->
+  <main>
+    <section class="rubik-section">
+      <div id="container"></div>
+
+      <div id="info">
+        <h2>Cubo Rubik 3D</h2>
+        <p>Haz clic en una cara para seleccionarla, luego usa los botones para rotarla.</p>
+        <p>Mezcla el cubo con el botón "Mezclar" o reinícialo con "Reiniciar".</p>
+      </div>
+
+      <div id="controls">
+        <button id="rotateLeft">Rotar Izquierda</button>
+        <button id="rotateRight">Rotar Derecha</button>
+        <button id="shuffle">Mezclar</button>
+        <button id="reset">Reiniciar</button>
+      </div>
+
+      <div id="colorPicker">
+        <h3>Colores</h3>
+        <label>x1 (izq): <input type="color" id="color-x1" value="#ffa500" /></label>
+        <label>x2 (der): <input type="color" id="color-x2" value="#ff0000" /></label>
+        <label>y1 (abajo): <input type="color" id="color-y1" value="#00ff00" /></label>
+        <label>y2 (arriba): <input type="color" id="color-y2" value="#ffff00" /></label>
+        <label>z1 (atrás): <input type="color" id="color-z1" value="#0000ff" /></label>
+        <label>z2 (frente): <input type="color" id="color-z2" value="#ffffff" /></label>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

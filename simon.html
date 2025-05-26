@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memoria Tecnológica | Play</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/tech-memory.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../works.html">Works</a></li>
+          <li><a href="../play.html">Play</a></li>
+          <li><a href="../contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Juego de Memoria -->
+  <section class="memory-game-section">
+    <div class="container">
+      <h2 class="section-title">Memoria Tecnológica</h2>
+      <div class="game-container">
+        <div class="game-info">
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-label">Nivel:</span>
+              <span id="level">1</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Puntaje:</span>
+              <span id="score">0</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Record:</span>
+              <span id="high-score">0</span>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="start-btn" class="game-btn">Iniciar</button>
+            <button id="reset-btn" class="game-btn">Reiniciar</button>
+          </div>
+        </div>
+        
+        <div class="memory-board">
+          <!-- Las celdas se generarán dinámicamente con JavaScript -->
+        </div>
+        
+        <div class="message" id="message">
+          <p>Presiona "Iniciar" para comenzar el juego</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/tech-memory.js"></script>
+</body>
+</html>
