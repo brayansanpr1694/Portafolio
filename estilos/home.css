@@ -141,10 +141,44 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 0;
+  border-radius: 25;
 }
 
 /* Cara trasera rotada */
 .flip-card-back {
   transform: rotateY(180deg);
+}
+/* Estado normal sin borde */
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  border: none;
+  box-shadow: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Al voltear (hover), la carta trasera obtiene marco y sombra */
+.flip-card:hover .flip-card-back img {
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.seccion-durazno {
+  background-color: #ffe5d0; /* Durazno muy suave */
+  padding: 5rem 2rem;
+}
+
+/* Opcional: estilos de texto dentro de esta sección */
+.seccion-durazno h2,
+.seccion-durazno h3,
+.seccion-durazno p {
+  color: #333; /* Texto oscuro para contraste */
+}
+
+/* Para contenido centrado y con máximo ancho */
+.seccion-durazno .container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

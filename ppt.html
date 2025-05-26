@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="estilos/styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #f8f8f8, #e0e0e0);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .game-container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 600px;
+      margin: 4rem auto;
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .choices {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .choice-card {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-size: 2rem;
+    }
+
+    .choice-card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .choices-display {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 3rem;
+      margin: 1.5rem 0;
+    }
+
+    .result {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      min-height: 2rem;
+      transition: color 0.3s;
+    }
+
+    .score {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .btn-reset {
+      margin-top: 2rem;
+      background-color: #e74c3c;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-reset:hover {
+      background-color: #c0392b;
+    }
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+        <nav>
+            <div class="logo">Brayan Santamaria</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="play.html">Play</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+  <!-- Juego -->
+  <main class="game-container">
+    <h1>¡Piedra, Papel o Tijera!</h1>
+
+    <div class="choices">
+      <div class="choice-card" onclick="playGame('✊')">✊<br><small>Piedra</small></div>
+      <div class="choice-card" onclick="playGame('✋')">✋<br><small>Papel</small></div>
+      <div class="choice-card" onclick="playGame('✌️')">✌️<br><small>Tijera</small></div>
+    </div>
+
+    <div class="choices-display">
+      <div id="player-choice">❔</div>
+      <div>VS</div>
+      <div id="computer-choice">❔</div>
+    </div>
+
+    <div class="result" id="result"></div>
+    <div class="score">
+      Victorias: <span id="wins">0</span> |
+      Derrotas: <span id="losses">0</span> |
+      Empates: <span id="draws">0</span>
+    </div>
+
+    <button class="btn-reset" onclick="resetScore()">Reiniciar Marcador</button>
+  </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+  <script>
+    let wins = 0, losses = 0, draw = 0;
+
+    function computerChoice() {
+      const options = ['✊', '✋', '✌️'];
+      return options[Math.floor(Math.random() * 3)];
+    }
+
+    function playGame(playerChoice) {
+      const computer = computerChoice();
+      const result = document.getElementById('result');
+      const playerDisplay = document.getElementById('player-choice');
+      const computerDisplay = document.getElementById('computer-choice');
+
+      playerDisplay.textContent = playerChoice;
+      computerDisplay.textContent = '❔';
+      result.textContent = '';
+
+      setTimeout(() => {
+        computerDisplay.textContent = computer;
+        if (playerChoice === computer) {
+          result.textContent = "¡Empate!";
+          draw++;
+        } else if (
+          (playerChoice === '✊' && computer === '✌️') ||
+          (playerChoice === '✋' && computer === '✊') ||
+          (playerChoice === '✌️' && computer === '✋')
+        ) {
+          result.textContent = "¡Ganaste!";
+          wins++;
+        } else {
+          result.textContent = "¡Perdiste!";
+          losses++;
+        }
+
+        document.getElementById('wins').textContent = wins;
+        document.getElementById('losses').textContent = losses;
+        document.getElementById('draws').textContent = draw;
+      }, 500);
+    }
+
+    function resetScore() {
+      wins = 0; losses = 0; draw = 0;
+      document.getElementById('wins').textContent = wins;
+      document.getElementById('losses').textContent = losses;
+      document.getElementById('draws').textContent = draw;
+      document.getElementById('result').textContent = "";
+      document.getElementById('player-choice').textContent = "❔";
+      document.getElementById('computer-choice').textContent = "❔";
+    }
+  </script>
+</body>
+</html>
