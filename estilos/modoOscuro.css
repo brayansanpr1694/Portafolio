@@ -1,0 +1,106 @@
+:root {
+  --background-color: #fff;
+  --text-color: #111;
+  --primary-color: #a84b2e;
+  --secondary-color: #f08957;
+  --accent-color: #bf6f42;
+  --transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --primary-color: #ffa07a;
+  --secondary-color: #ff9671;
+  --accent-color: #ffd8a8;
+}
+.btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.btn-icon:hover {
+  color: var(--primary-color);
+}
+/* Colores por defecto (modo claro) */
+body {
+  background-color: #fff;
+  color: #111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Primera sección: hero */
+.hero {
+  background-color: #fff;
+  color: #111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Segunda sección: durazno */
+.seccion-durazno {
+  background: linear-gradient(135deg, #ffe5d0 0%, #ffd1b3 100%);
+  color: #5a3a2e;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* -------------------- */
+/* Modos oscuros cuando body tiene clase .dark-mode */
+
+/* Fondo y texto general */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+
+/* Hero oscuro (sección 1) */
+body.dark-mode .hero {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Sección durazno (sección 2) con fondo gris oscuro */
+body.dark-mode .seccion-durazno {
+  background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  color: #dddddd;
+}
+
+
+/* Botones, links, iconos, etc., puedes ajustar aquí también si quieres */
+body.dark-mode .btn-contact,
+body.dark-mode .icon-button {
+  background-color: var(--accent-color);
+  color: #222;
+}
+.inicio {
+  background-color: var(--background-color, #f9f9f9);
+  transition: background-color 0.3s ease;
+}
+
+.seccion-durazno {
+  background: linear-gradient(135deg, #ffe5d0 0%, #ffd1b3 100%);
+  color: var(--secondary-color, #2c3e50);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro para sección durazno */
+body.dark-mode .seccion-durazno {
+  background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  color: var(--text-light, #aaaaaa);
+}
