@@ -6,6 +6,8 @@
   <title>Piedra, Papel o Tijera</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="estilos/styles.css">
+      <link rel="stylesheet" href="estilos/modoOscuro.css">
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -96,22 +98,27 @@
   </style>
 </head>
 <body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Brayan Santamaria</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li>
+        <button id="modoOscuroBtn" class="btn-icon" aria-label="Alternar modo oscuro" title="Modo oscuro">
+            <i class="fas fa-moon"></i>
+        </button>
+        </li>
 
-    <header>
-        <div class="container">
-        <nav>
-            <div class="logo">Brayan Santamaria</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="play.html">Play</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <!-- Juego -->
   <main class="game-container">
@@ -200,5 +207,7 @@
       document.getElementById('computer-choice').textContent = "❔";
     }
   </script>
+      <script src="scripts/modoOscuro.js"></script>
+
 </body>
 </html>

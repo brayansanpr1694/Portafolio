@@ -97,12 +97,30 @@
     }
     }
 
-    /* Contenedor con perspectiva */
 .hero-image {
-  perspective: 1000px;
-  max-width: 350px;
-  width: 100%;
+  width: 90vw;                /* Escalable en pantallas pequeñas */
+  max-width: 300px;           /* Hasta 400px máximo */
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 6px solid #ccc;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
 }
+
+.hero-image img {
+  width: 80%;                /* Ajustado para que no se desborde ni se vea muy chica */
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+
 
 /* Tarjeta principal */
 .flip-card {

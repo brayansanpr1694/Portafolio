@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre Mí</title>
   <link rel="stylesheet" href="estilos/styles.css" />
+  <link rel="stylesheet" href="estilos/modoOscuro.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+
 </head>
 <body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Brayan Santamaria</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li>
+        <button id="modoOscuroBtn" class="btn-icon" aria-label="Alternar modo oscuro" title="Modo oscuro">
+            <i class="fas fa-moon"></i>
+        </button>
+        </li>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <nav>
-            <div class="logo">Brayan Santamaria</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="play.html">Play</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+      </ul>
+    </nav>
+  </div>
+</header>
   <!-- Sección Sobre Mí -->
   <section class="sobre-mi">
     <div class="container">
@@ -50,6 +57,7 @@
       </div>
     </div>
   </footer>
+    <script src="scripts/modoOscuro.js"></script>
 
 </body>
 </html>

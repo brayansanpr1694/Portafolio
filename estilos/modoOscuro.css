@@ -88,19 +88,34 @@ body.dark-mode .icon-button {
   background-color: var(--accent-color);
   color: #222;
 }
+
 .inicio {
   background-color: var(--background-color, #f9f9f9);
   transition: background-color 0.3s ease;
 }
 
 .seccion-durazno {
-  background: linear-gradient(135deg, #ffe5d0 0%, #ffd1b3 100%);
+  background: linear-gradient(135deg, #ffe5d0 0%, #ffcdab 100%);
   color: var(--secondary-color, #2c3e50);
   transition: background 0.3s ease, color 0.3s ease;
+  
 }
 
 /* Modo oscuro para sección durazno */
 body.dark-mode .seccion-durazno {
   background: linear-gradient(135deg, #333333 0%, #555555 100%);
-  color: var(--text-light, #aaaaaa);
+  color: var(--text-light, #e9e9e9);
+    .durazno-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.durazno-content p {
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
 }
