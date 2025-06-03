@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Common Beginner Mistakes - Blog</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <link rel="stylesheet" href="estilos/blog.css" />
+  <link rel="stylesheet" href="estilos/modoOscuro.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <button id="modoOscuroBtn" class="btn-icon" aria-label="Toggle Dark Mode" title="Dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Blog Content -->
+  <main class="blog-article container">
+    <article class="article-content">
+      <header class="article-header">
+        <h1>Common Beginner Mistakes in Flutter</h1>
+        <p class="meta">Published June 4, 2024 · By Brayan Santamaria</p>
+      </header>
+
+      <figure class="article-hero">
+        <img src="imagenes/fix-bugs-and-errors-in-your-flutter-app.jpg" alt="Common Flutter mistakes illustration" />
+        <figcaption>Cover: Common pitfalls in Flutter development</figcaption>
+      </figure>
+
+      <section>
+        <p>When I first started with Flutter, I made plenty of mistakes - some obvious, some subtle. Here are the most common pitfalls I encountered and how I learned to avoid them.</p>
+
+        <h2>1. Overusing setState()</h2>
+        <p>As a beginner, I used setState() for everything. This led to performance issues and unnecessary widget rebuilds.</p>
+        <p><strong>Solution:</strong> Learn state management solutions early. Provider, Riverpod, or Bloc can help manage state more efficiently.</p>
+
+        <h2>2. Ignoring Widget Constraints</h2>
+        <p>I often got "unbounded height" errors because I didn't understand how constraints work in Flutter's layout system.</p>
+        <p><strong>Solution:</strong> Remember that in Flutter, constraints go down, sizes go up, and parent sets position.</p>
+
+        <blockquote>
+          "Constraints are like your parents - they tell you how big you can be. Your size is like your children - you tell them how big they should be." — Flutter layout proverb
+        </blockquote>
+
+        <h2>3. Not Using const Widgets</h2>
+        <p>I didn't realize how much performance I was losing by not marking widgets as const when possible.</p>
+        <p><strong>Solution:</strong> Use const constructors for widgets that don't need to change. This helps Flutter reuse them efficiently.</p>
+
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/syIhPDoLhYI" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        <figcaption>Const widgets improve rebuild performance significantly</figcaption>
+            
+
+        <h2>4. Over-Nesting Widgets</h2>
+        <p>My code was full of unnecessary nested widgets, making it hard to read and maintain.</p>
+        <p><strong>Solution:</strong> Extract complex widgets into separate methods or classes. Use the "Extract Widget" refactoring in your IDE.</p>
+
+        <h2>5. Not Handling Errors Properly</h2>
+        <p>I often forgot to add error handling for network requests and async operations.</p>
+        <p><strong>Solution:</strong> Always use try/catch with async operations. Consider adding error boundaries for critical app sections.</p>
+
+        <h2>6. Skipping Tests</h2>
+        <p>I thought testing was something I could do "later" - until my app broke in production.</p>
+        <p><strong>Solution:</strong> Write unit tests for business logic and widget tests for critical UI components from the start.</p>
+
+        <h2>7. Not Using Keys Properly</h2>
+        <p>I didn't understand when and why to use Keys, leading to subtle bugs in list operations.</p>
+        <p><strong>Solution:</strong> Use ValueKey for items with unique identifiers. GlobalKey when you need to access widget state.</p>
+
+        <h2>8. Platform-Specific Assumptions</h2>
+        <p>I designed UIs that looked great on Android but terrible on iOS because I didn't consider platform differences.</p>
+        <p><strong>Solution:</strong> Use platform-aware widgets like CupertinoApp for iOS-style apps or check Platform.isIOS/Platform.isAndroid.</p>
+
+        <h2>9. Not Optimizing Build Methods</h2>
+        <p>I put heavy computations directly in build() methods, causing janky animations.</p>
+        <p><strong>Solution:</strong> Move expensive operations outside build() or use memoization techniques.</p>
+
+        <h2>10. Ignoring Accessibility</h2>
+        <p>My early apps weren't accessible to users with disabilities.</p>
+        <p><strong>Solution:</strong> Use Semantics widgets, provide text alternatives, and test with screen readers.</p>
+
+        <h2>Conclusion</h2>
+        <p>Making mistakes is part of the learning process. The key is recognizing them early and developing better habits. Flutter's excellent documentation and community make it easier to overcome these beginner pitfalls.</p>
+
+        <h2>Resources to Avoid Mistakes</h2>
+        <ul>
+          <li><a href="https://flutter.dev/docs/development/ui/layout/constraints" target="_blank" rel="noopener noreferrer">Understanding Constraints</a></li>
+          <li><a href="https://dart.dev/guides/language/effective-dart/usage#constructors" target="_blank" rel="noopener noreferrer">Effective Dart: Constructors</a></li>
+          <li><a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/options" target="_blank" rel="noopener noreferrer">State Management Options</a></li>
+          <li><a href="https://flutter.dev/docs/development/accessibility-and-localization/accessibility" target="_blank" rel="noopener noreferrer">Accessibility in Flutter</a></li>
+        </ul>
+
+        <h2>What Mistakes Did You Make?</h2>
+        <p>Every developer has their own learning journey. What were your biggest beginner mistakes in Flutter? Share your experiences in the comments!</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/modoOscuro.js"></script>
+</body>
+</html>

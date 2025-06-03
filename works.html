@@ -8,6 +8,81 @@
   <link rel="stylesheet" href="estilos/blog.css">
       <link rel="stylesheet" href="estilos/modoOscuro.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      <style>
+        .projects {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+  object-fit: cover;
+  max-height: 180px; /* Ajusta esto si quieres aún más pequeño */
+}
+
+      </style>
 </head>
 <body>
   <!-- Header -->
@@ -33,44 +108,54 @@
   </div>
 </header>
 
-  <!-- Sección Proyectos -->
-  <section class="projects">
-    <div class="container">
-      <h2 class="section-title">Mis Proyectos</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Proyecto 1" />
-          <h3>App Inventario Flutter</h3>
-          <p>Aplicación para gestión de productos en cafeterías. Conexión a Firestore, navegación interna, y CRUD completo.</p>
-          <a href="#" class="btn">Ver Proyecto</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Proyecto 2" />
-          <h3>Simón Dice con lógica digital</h3>
-          <p>Diseño de un juego Simón Dice solo con compuertas lógicas y flip-flops, funcional en protoboard.</p>
-          <a href="#" class="btn">Ver Proyecto</a>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Proyecto 3" />
-          <h3>Portafolio Web</h3>
-          <p>Sitio web responsive creado con HTML, CSS y Font Awesome. Organizado en secciones claras y diseño moderno.</p>
-          <a href="#" class="btn">Ver Proyecto</a>
-        </div>
+
+<!-- Projects Section -->
+<section class="projects">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">Here are some of the things I've been working on lately. Real code, real challenges, real fun.</p>
+    
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="imagenes/inventariocafeteria.jpeg" alt="Flutter Inventory App" />
+        <h3>Flutter Inventory App</h3>
+        <p>Mobile app for managing product stock in cafeterias. Integrated with Firestore, internal navigation, and full CRUD functionality.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="imagenes/simon.png" alt="Simon Says with Logic Gates" />
+        <h3>Simon Says Game (Logic Only)</h3>
+        <p>Designed a fully functional Simon Says game using only digital logic gates and flip-flops. No microcontrollers, just pure hardware!</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="imagenes/Portafolio.png" alt="Portfolio Website" />
+        <h3>Responsive Portfolio Website</h3>
+        <p>A clean, responsive web portfolio built with HTML, CSS, and Font Awesome. Organized sections and a modern look.</p>
+        <a href="#" class="btn">View Project</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-      <div class="footer-links">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Términos de Servicio</a>
-      </div>
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Brayan Santamaria. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
     </div>
-  </footer>
-      <script src="scripts/modoOscuro.js"></script>
+  </div>
+</footer>
 
+<script src="scripts/modoOscuro.js"></script>
 </body>
 </html>
+
+

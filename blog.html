@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog - Mi Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="stylesheet" href="estilos/formularios.css">
-    <link rel="stylesheet" href="estilos/blog.css">
-    <link rel="stylesheet" href="estilos/modoOscuro.css">
-
-
+  <title>Blog - My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/formularios.css">
+  <link rel="stylesheet" href="estilos/blog.css">
+  <link rel="stylesheet" href="estilos/modoOscuro.css">
 </head>
 <body>
   <!-- Header -->
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Brayan Santamaria</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="play.html">Play</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li>
-        <button id="modoOscuroBtn" class="btn-icon" aria-label="Alternar modo oscuro" title="Modo oscuro">
-            <i class="fas fa-moon"></i>
-        </button>
-        </li>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <button id="modoOscuroBtn" class="btn-icon" aria-label="Toggle dark mode" title="Dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <!-- Sección Blog -->
+  <!-- Blog Section -->
   <section class="blog">
     <div class="container">
-      <h2 class="section-title">Blog Técnico</h2>
-      <div class="blog-posts">
-        <article class="post">
-          <h3>Cómo empecé con Flutter</h3>
-          <p>En esta entrada comparto mi experiencia comenzando con Flutter, desde el primer `hello world` hasta conectar con Firebase...</p>
-          <a href="blogComoEmpece.html" class="read-more">Leer más</a>
-        </article>
-        <article class="post">
-          <h3>Mis herramientas favoritas</h3>
-          <p>Te cuento qué herramientas y lenguajes me hacen la vida más fácil como programador: VSCode, Git, Dart, Python, y más...</p>
-          <a href="herramientas_fav.html" class="read-more">Leer más</a>
-        </article>
-        <article class="post">
-          <h3>Errores comunes en principiantes</h3>
-          <p>Todos tropezamos al principio. Acá te muestro algunos errores clásicos que cometí y cómo los resolví sin morir en el intento.</p>
-          <a href="blogComoEmpece.html" class="read-more">Leer más</a>
-        </article>
-        <article class="post">
-            <h3>Prueba</h3>
-            <p>
-                skjdfahfguhaufdgafgjfda afgoiafdj gifigjia dfjggdgd gdfgfdgfdgf dgdfgdfgdfg
-            </p>
-            <a href="lienadetiempo.html" class="read-more">read more</a>
-        </article>
-                <article class="post">
-            <h3>Prueba</h3>
-            <p>
-                skjdfahfguhaufdgafgjfda afgoi afd jgifigj iadfjgg dgdgdfgf dgfdgf dgdfg dfgdfg
-            </p>
-            <a href="#" class="read-more">read more</a>
-        </article>
-                <article class="post">
-            <h3>Prueba</h3>
-            <p>
-                skjdfahf guhauf dgafgjfda afgo iafdjgi figjia dfjggdg dgd fgfdgf dgf dg dfgdf gdfg
-            </p> 
-            <a href="#" class="read-more">read more</a>
-        </article>
+      <h2 class="section-title">Tech Blog</h2>
+
+      <!-- Recent Posts -->
+      <div class="blog-section">
+        <h3 class="blog-subtitle">Recent Posts</h3>
+        <div class="blog-posts">
+          <!-- Your latest posts -->
+          <article class="post">
+            <img src="imagenes/flutter.png" alt="Flutter Image" class="post-image">
+            <h4>How I Started with Flutter</h4>
+            <p>In this post, I share my experience starting with Flutter...</p>
+            <a href="blogComoEmpece.html" class="read-more">Read more</a>
+          </article>
+          <article class="post">
+            <img src="imagenes/errores.png" alt="Flutter Error Image" class="post-image">
+            <h4>Common Beginner Mistakes</h4>
+            <p>Some classic mistakes I made and how I fixed them...</p>
+            <a href="erroesComunes.html" class="read-more">Read more</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Most Popular -->
+      <div class="blog-section">
+        <h3 class="blog-subtitle">Popular</h3>
+        <div class="blog-posts">
+          <article class="post">
+            <img src="imagenes/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_rlki9qov2zn7d27sqo73.webp" alt="Tools Image" class="post-image">
+            <h4>My Favorite Tools</h4>
+            <p>VSCode, Git, Dart, Python, and more...</p>
+            <a href="herramientas_fav.html" class="read-more">Read more</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Other Posts -->
+      <div class="blog-section">
+        <h3 class="blog-subtitle">Other Posts</h3>
+        <div class="blog-posts">
+          <article class="post">
+            <img src="imagenes/Mibro-bit-1.png" alt="Microbit Image" class="post-image">
+            <h4>My Teaching Experience</h4>
+            <p>I taught programming to teens with a focus on robotics using micro:bit.</p>
+            <a href="Enseñando.html" class="read-more">Read more</a>
+          </article>
+          <!-- You can keep adding more -->
+        </div>
       </div>
     </div>
   </section>
@@ -84,14 +90,14 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
       <div class="footer-links">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Términos de Servicio</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
   </footer>
-      <script src="scripts/modoOscuro.js"></script>
 
+  <script src="scripts/modoOscuro.js"></script>
 </body>
 </html>

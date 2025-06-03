@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Play - Minijuegos</title>
+  <title>Play - Mini Games</title>
   <link rel="stylesheet" href="estilos/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <link rel="stylesheet" href="estilos/blog.css">
   <link rel="stylesheet" href="estilos/modoOscuro.css">
-
 </head>
 <body>
 
   <!-- Header -->
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Brayan Santamaria</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="play.html">Play</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li>
-        <button id="modoOscuroBtn" class="btn-icon" aria-label="Alternar modo oscuro" title="Modo oscuro">
-            <i class="fas fa-moon"></i>
-        </button>
-        </li>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html" class="active">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <button id="modoOscuroBtn" class="btn-icon" aria-label="Toggle dark mode" title="Dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <!-- Sección Minijuegos -->
+  <!-- Games Section -->
   <section class="blog">
     <div class="container">
-      <h2 class="section-title">Minijuegos</h2>
+      <h2 class="section-title">Mini Games</h2>
       <div class="blog-posts">
-        <!-- Juego 1 -->
+        <!-- Game 1 -->
         <article class="post">
-          <h3>Pares iguales</h3>
-          <p>¿Podras encontrar los pares de iconos en el menor tiempo posible? demuestra que eres el mejor.</p>
-          <a href="simon.html" class="read-more">Jugar</a>
+          <h3>Memory Match</h3>
+          <p>Can you find all the matching pairs in the shortest time possible? Prove you've got the best memory!</p>
+          <a href="simon.html" class="read-more">Play Now</a>
         </article>
 
-        <!-- Juego 2 -->
+        <!-- Game 2 -->
         <article class="post">
-          <h3>Cubo rubick en 3D</h3>
-          <p>Desafia tus habilidades en resolver problemas y rompecabezas armando un cubo rubik 3x3</p>
-          <a href="adivina.html" class="read-more">Jugar</a>
+          <h3>3D Rubik's Cube</h3>
+          <p>Challenge your problem-solving skills with this classic 3x3 puzzle. Can you solve it?</p>
+          <a href="adivina.html" class="read-more">Play Now</a>
         </article>
 
-        <!-- Juego 3 -->
+        <!-- Game 3 -->
         <article class="post">
-          <h3>Piedra, Papel o Tijera</h3>
-          <p>El clásico enfrentamiento. ¿Podrás vencer a la IA en esta batalla de lógica y suerte?</p>
-          <a href="ppt.html" class="read-more">Jugar</a>
+          <h3>Rock, Paper, Scissors</h3>
+          <p>The ultimate classic showdown. Can you outsmart our AI in this battle of wits and luck?</p>
+          <a href="ppt.html" class="read-more">Play Now</a>
         </article>
       </div>
     </div>
@@ -67,14 +65,14 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
       <div class="footer-links">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Términos de Servicio</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
       </div>
     </div>
   </footer>
-      <script src="scripts/modoOscuro.js"></script>
-
+  
+  <script src="scripts/modoOscuro.js"></script>
 </body>
 </html>

@@ -1,151 +1,150 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Home</title>
-    <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="stylesheet" href="estilos/home.css">
-    <link rel="stylesheet" href="estilos/modoOscuro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Home</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+  <link rel="stylesheet" href="estilos/home.css">
+  <link rel="stylesheet" href="estilos/modoOscuro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navegación -->
-<!-- Navegación -->
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">Brayan Santamaria</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="play.html">Play</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li>
-        <button id="modoOscuroBtn" class="btn-icon" aria-label="Alternar modo oscuro" title="Modo oscuro">
-            <i class="fas fa-moon"></i>
-        </button>
-        </li>
 
-      </ul>
-    </nav>
-  </div>
-</header>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <button id="modoOscuroBtn" class="btn-icon" aria-label="Toggle dark mode" title="Dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-
-    <!-- Sección de Inicio -->
-    <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container hero-grid">
-        <div class="hero-image">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="imagenes/foto.png" alt="Frontal">
-                </div>
-                <div class="flip-card-back">
-                    <img src="imagenes/Diseño sin título.png" alt="Trasera">
-                </div>
-                </div>
+      <div class="hero-image">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="imagenes/foto.png" alt="Front image">
             </div>
+            <div class="flip-card-back">
+              <img src="imagenes/Diseño sin título.png" alt="Back image">
             </div>
+          </div>
+        </div>
+      </div>
 
-
-        <div class="hero-content">
+      <div class="hero-content">
         <h2>Software Developer & Telecommunications Engineer</h2>
         <h3>Turning lines of code into solutions that connect the world.</h3>
 
         <div class="hero-buttons">
-            <a href="#" class="icon-button" ><i class="fab fa-discord"></i></a>
-            <a href="#" class="icon-button"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:brayan.santamaria.2002@gmail.com" class="icon-button"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="icon-button"><i class="fab fa-discord"></i></a>
+          <a href="#" class="icon-button"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:brayan.santamaria.2002@gmail.com" class="icon-button"><i class="fas fa-envelope"></i></a>
         </div>
 
         <div class="contact-button">
-            <a href="contact.html" class="btn-contact">Contact me</a>
+          <a href="contact.html" class="btn-contact">Contact Me</a>
         </div>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="seccion-durazno">
-  <div class="container durazno-grid">
-    <div class="durazno-content">
-      <h2>Tecnologías con las que he trabajado</h2>
-      <p>Aquí te cuento qué tecnologías he trabajado y qué proyectos he realizado con estas.</p>
-      <a href="#proyectos" class="btn-contact">Ver proyectos</a>
+  <!-- Technologies Section -->
+  <section class="seccion-durazno">
+    <div class="container durazno-grid">
+      <div class="durazno-content">
+        <h2>Technologies I've Worked With</h2>
+        <p>Here I share which technologies I’ve worked with and the projects I’ve developed using them.</p>
+        <a href="#proyectos" class="btn-contact">See Projects</a>
+      </div>
+      <div class="durazno-image">
+        <img src="imagenes/tecnologias.png" alt="Technology image">
+      </div>
     </div>
-    <div class="durazno-image">
-      <img src="imagenes/tecnologias.png" alt="imagen de tecnologías">
-    </div>
-  </div>
-</section>
-    <section class="hero">
+  </section>
+
+  <!-- Lottie Section: System -->
+  <section class="hero">
     <div class="container hero-grid">
-        <!-- Flip Card con animación Lottie en la parte trasera -->
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div id="lottieRelax" style="width: 400px; height: 400px;"></div>
-    </div>
-  </div>
-</div>
-        <div class="hero-content">
-        <h2>Implementa un mejor sistema y deja que trabaje por ti</h2>
-
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div id="lottieRelax" style="width: 400px; height: 400px;"></div>
+          </div>
         </div>
+      </div>
+      <div class="hero-content">
+        <h2>Implement a better system and let it work for you</h2>
+      </div>
     </div>
-</section>
-<section class="seccion-durazno">
-  <div class="container durazno-grid">
-    <div class="durazno-content">
-      <h2>No tengas miedo</h2>
-      <p>Impulsa tu negiocio a otro nivel</p>
-      <a href="#proyectos" class="btn-contact">Ver proyectos</a>
+  </section>
+
+  <!-- Lottie Section: Growth -->
+  <section class="seccion-durazno">
+    <div class="container durazno-grid">
+      <div class="durazno-content">
+        <h2>Don't Be Afraid</h2>
+        <p>Take your business to the next level</p>
+        <a href="#proyectos" class="btn-contact">See Projects</a>
+      </div>
+      <div class="durazno-image">
+        <div id="lottieSubiendo" style="width: 400px; height: 400px;"></div>
+      </div>
     </div>
-    <div class="durazno-image">
-      <div id="lottieSubiendo" style="width: 400px; height: 400px;"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
     </div>
-  </div>
-</section>
-    <!-- Pie de Página -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Términos de Servicio</a>
-            </div>
-        </div>
-    </footer>
-    <script src="scripts/modoOscuro.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+  </footer>
 
-<script>
-  lottie.loadAnimation({
-    container: document.getElementById('lottieRelax'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'json/relax.json'
-  });
-</script>
+  <!-- Scripts -->
+  <script src="scripts/modoOscuro.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
 
-<script>
-  lottie.loadAnimation({
-    container: document.getElementById('lottieSubiendo'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'json/subiendo.json'
-  });
-</script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottieRelax'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'json/relax.json'
+    });
+  </script>
 
-
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottieSubiendo'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'json/subiendo.json'
+    });
+  </script>
 
 </body>
 </html>

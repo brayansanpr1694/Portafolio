@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How I Started with Flutter - Blog</title>
+  <link rel="stylesheet" href="estilos/styles.css" />
+  <link rel="stylesheet" href="estilos/blog.css" />
+  <link rel="stylesheet" href="estilos/modoOscuro.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Brayan Santamaria</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="play.html">Play</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li>
+            <button id="modoOscuroBtn" class="btn-icon" aria-label="Toggle Dark Mode" title="Dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Blog Content -->
+  <main class="blog-article container">
+    <article class="article-content">
+      <header class="article-header">
+        <h1>How I Started with Flutter</h1>
+        <p class="meta">Published June 1, 2024 · By Brayan Santamaria</p>
+      </header>
+
+      <figure class="article-hero">
+        <img src="imagenes/flutter.png" alt="Flutter introduction image" />
+        <figcaption>Cover: Introduction to Flutter</figcaption>
+      </figure>
+
+      <section>
+        <p>It all started when I heard Flutter allowed building apps for Android, iOS, web, and desktop — all from a single codebase. That instantly grabbed my attention.</p>
+
+        <h2>First Steps</h2>
+        <p>I installed the SDK, set up VSCode, and dove into the classic "Hello World" app. The hot reload speed blew me away — instant feedback is a game-changer.</p>
+
+        <h2>The Dart Language</h2>
+        <p>I was new to Dart, but quickly appreciated its clean syntax and async/await features. Learning about classes and widgets was the foundation that made Flutter click for me.</p>
+
+        <blockquote>
+          "The secret lies in understanding the widget tree. Once you get that, everything flows naturally." — Probably me
+        </blockquote>
+
+        <h2>Firebase Integration</h2>
+        <p>Adding Firebase was surprisingly straightforward using official packages. Real-time data syncing opened up new possibilities for my projects.</p>
+
+        <figure>
+          <img src="imagenes/diagram-FCM.png" alt="Flutter and Firebase integration diagram" />
+          <figcaption>Diagram showing the connection between Flutter and Firebase</figcaption>
+        </figure>
+
+        <h2>Dealing with Challenges</h2>
+        <p>No journey is without bumps. I struggled initially with state management and navigation patterns. After exploring Provider and Riverpod, my apps became more scalable and maintainable.</p>
+
+        <h2>Building My First App</h2>
+        <p>Putting theory into practice, I created a simple task tracker app. Designing UI with Flutter's widget system was fun and intuitive. Deploying to both Android and iOS felt like magic.</p>
+
+        <h2>Performance and Debugging</h2>
+        <p>Flutter’s dev tools helped me identify performance bottlenecks quickly. The detailed error messages and widget inspector saved hours of headaches.</p>
+
+        <h2>Why Flutter?</h2>
+        <p>For me, Flutter’s ability to deliver a native-like experience across platforms without juggling multiple languages is unmatched. Plus, the active community and continuous improvements keep me excited to learn more.</p>
+
+        <h2>Conclusion</h2>
+        <p>Flutter empowered me to prototype and launch ideas rapidly. The best part? It just works everywhere. I’m looking forward to mastering it and building more ambitious projects.</p>
+
+        <h2>Resources I Used</h2>
+        <ul>
+          <li><a href="https://flutter.dev/docs" target="_blank" rel="noopener noreferrer">Official Flutter Docs</a></li>
+          <li><a href="https://dart.dev/guides" target="_blank" rel="noopener noreferrer">Dart Language Guide</a></li>
+          <li><a href="https://firebase.google.com/docs/flutter/setup" target="_blank" rel="noopener noreferrer">Firebase for Flutter</a></li>
+          <li><a href="https://pub.dev" target="_blank" rel="noopener noreferrer">Dart Packages Repository</a></li>
+        </ul>
+
+        <h2>What’s Next?</h2>
+        <p>Next on my roadmap is diving deeper into animations, custom widgets, and exploring Flutter Web. Stay tuned!</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/modoOscuro.js"></script>
+</body>
+</html>

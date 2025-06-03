@@ -1,0 +1,44 @@
+.about-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-highlights {
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-highlights li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.about-highlights i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+.about-image img {
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
