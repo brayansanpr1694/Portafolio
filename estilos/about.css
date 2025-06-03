@@ -1,7 +1,22 @@
+/* Variables para modo claro y oscuro */
+:root {
+  --bg-about: #f9f9f9;
+  --text-about: #333;
+  --icon-color: #007BFF;
+}
+
+body.dark-mode {
+  --bg-about: #2a2a2a;
+  --text-about: #ddd;
+  --icon-color: #66aaff;
+}
+
+/* Sección About */
 .about-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--bg-about);
+  color: var(--text-about);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-content {
@@ -34,11 +49,17 @@
 
 .about-highlights i {
   margin-right: 10px;
-  color: #007BFF;
+  color: var(--icon-color);
 }
 
 .about-image img {
   max-width: 280px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Cambiar sombra de imagen en modo oscuro */
+body.dark-mode .about-image img {
+  box-shadow: 0 4px 15px rgba(102, 170, 255, 0.7);
 }

@@ -9,16 +9,19 @@
       <link rel="stylesheet" href="estilos/modoOscuro.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
       <style>
-        .projects {
+      .projects {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: var(--background-color);
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--text-color);
 }
 
 .section-subtitle {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #666;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
 }
 
 .project-grid {
@@ -29,49 +32,21 @@
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: var(--background-color);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
   width: 300px;
   text-align: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  color: var(--text-color);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.project-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-card p {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
 .project-card img {
   max-width: 100%;
   height: auto;
@@ -79,8 +54,40 @@
   display: block;
   margin: 0 auto 1rem;
   object-fit: cover;
-  max-height: 180px; /* Ajusta esto si quieres aún más pequeño */
+  max-height: 180px;
+  transition: box-shadow 0.3s ease;
 }
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
 
       </style>
 </head>
